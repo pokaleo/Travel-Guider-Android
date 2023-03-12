@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".views.MapFragment">
+
+    <androidx.fragment.app.FragmentContainerView
+        android:id="@+id/map"
+        android:name="com.google.android.gms.maps.SupportMapFragment"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".views.MapFragment" />
+
+    <RelativeLayout
+        android:layout_width="120dp"
+        android:layout_height="182dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="57dp"
+        android:layout_marginEnd="12dp"
+        android:background="@drawable/layout_widget"
+        android:gravity="center_vertical">
+
+
+        <ImageView
+            android:layout_width="81dp"
+            android:layout_height="65dp"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginEnd="17dp"
+            android:layout_marginRight="5dp"
+            android:layout_marginBottom="107dp"
+            android:src="@drawable/weather_icon" />
+
+        <ImageView
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginLeft="15dp"
+            android:layout_marginEnd="91dp"
+            android:layout_marginRight="2dp"
+            android:layout_marginBottom="73dp"
+            android:src="@drawable/time_icon" />
+
+        <TextView
+            android:id="@+id/timer"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginEnd="29dp"
+            android:layout_marginRight="5dp"
+            android:layout_marginBottom="73dp"
+            android:text="00:00:00"
+            android:textColor="@color/black" />
+
+        <ImageView
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginEnd="91dp"
+            android:layout_marginRight="5dp"
+            android:layout_marginBottom="43dp"
+            android:src="@drawable/temperature_icon" />
+
+        <TextView
+            android:id="@+id/temperature_value"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginEnd="21dp"
+            android:layout_marginRight="5dp"
+            android:layout_marginBottom="47dp"
+            android:text="0.9℃"
+            android:textColor="@color/black" />
+
+        <ImageView
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginEnd="91dp"
+            android:layout_marginBottom="13dp"
+            android:src="@drawable/barometer_icon" />
+
+        <TextView
+            android:id="@+id/pressure_value"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginEnd="21dp"
+            android:layout_marginRight="5dp"
+            android:layout_marginBottom="13dp"
+            android:text="1013.25hPa"
+            android:textColor="@color/black" />
+
+
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/visitTitle"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_marginStart="0dp"
+        android:layout_marginTop="0dp"
+        android:layout_marginEnd="0dp"
+        android:background="#7CFFFFFF"
+        android:gravity="center"
+        android:text=""
+        android:textAlignment="center"
+        android:textSize="28sp" />
+
+    <ImageView
+        android:id="@+id/cameraButton"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="128dp"
+        android:layout_marginRight="337dp"
+        android:background="@drawable/shape_primary"
+        android:padding="10dp"
+        android:src="@drawable/photo"/>
+
+    <ImageView
+        android:id="@+id/photoButton"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="195dp"
+        android:layout_marginRight="337dp"
+        android:background="@drawable/shape_secondary"
+        android:padding="10dp"
+        android:src="@drawable/album" />
+
+    <ImageView
+        android:id="@+id/locateButton"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="64dp"
+        android:layout_marginRight="337dp"
+        android:background="@drawable/shape_secondary"
+        android:padding="10dp"
+        android:src="@drawable/position" />
+
+    <Button
+        android:id="@+id/visitButton"
+        android:layout_width="wrap_content"
+        android:layout_height="61dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="31dp"
+        android:backgroundTint="@color/primaryColor"
+        android:text="Start new visit"
+        android:textColor="@color/white" />
+
+
+</RelativeLayout>
+

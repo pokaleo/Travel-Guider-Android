@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<layout xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <data>
+
+    </data>
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/image"
+                android:layout_width="match_parent"
+                android:layout_height="450dp" />
+
+            <TextView
+                android:id="@+id/visitData1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/primaryColor"
+                android:text="Title of the visit" />
+
+            <TextView
+                android:id="@+id/visitTitle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Unkonwn title"
+                android:textColor="@color/secondaryColor" />
+
+            <TextView
+                android:id="@+id/visitData2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Time of Start:"
+                android:textColor="@color/primaryColor" />
+
+            <TextView
+                android:id="@+id/visitDate"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Unknown time"
+                android:textColor="@color/secondaryColor" />
+
+            <TextView
+                android:id="@+id/visitData3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Duration:"
+                android:textColor="@color/primaryColor" />
+
+            <TextView
+                android:id="@+id/visitDuration"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Unknonw duration"
+                android:textColor="@color/secondaryColor" />
+
+        </LinearLayout>
+    </ScrollView>
+</layout>
+
